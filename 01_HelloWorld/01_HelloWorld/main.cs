@@ -59,6 +59,11 @@ namespace _01_HelloWorld
             Console.WriteLine(m1.Hours);
             Console.ReadKey();
 
+            Console.WriteLine("threading...");
+            MyThread t1 = new MyThread();
+            t1.InfoThread();
+            t1.NewThread();
+            Console.ReadKey();
         }
     }
 
@@ -97,7 +102,7 @@ namespace _01_HelloWorld
 
         public void Stampa()
         {
-            System.Console.WriteLine("First name:" + this.firstName + "Last name:" + this.lastName);
+            System.Console.WriteLine("First name:" + this.firstName + " Last name:" + this.lastName);
         }
     }
 

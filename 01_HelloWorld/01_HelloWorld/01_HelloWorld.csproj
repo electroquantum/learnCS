@@ -46,6 +46,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SuperClass.cs" />
+    <Compile Include="MyThread.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
