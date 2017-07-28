@@ -4,6 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Scope
+//      public
+//      private
+//      protected
+//      internal
+//      protected internal
+
 namespace _01_HelloWorld
 {
     class HelloWorld
@@ -42,6 +49,15 @@ namespace _01_HelloWorld
             {
                 Console.Write("{0}", i);
             }
+            Console.WriteLine();
+            System.Console.ReadKey();
+
+            MyClass m1 = new MyClass();
+            Console.WriteLine(m1.Number);
+            Console.WriteLine(m1.Hours);
+            m1.Hours = 5;
+            Console.WriteLine(m1.Hours);
+            Console.ReadKey();
 
         }
     }
@@ -70,18 +86,18 @@ namespace _01_HelloWorld
 
     class Person
     {
-        string name;
-        string surname;
+        string firstName;
+        string lastName;
 
-        public Person(string name, string surname)
+        public Person(string firstName, string lastName)
         {
-            this.name = name;
-            this.surname = surname;
+            this.firstName = firstName;
+            this.lastName = lastName;
         }
 
         public void Stampa()
         {
-            System.Console.WriteLine("Name:" + this.name + "Surname:" + this.surname);
+            System.Console.WriteLine("First name:" + this.firstName + "Last name:" + this.lastName);
         }
     }
 
@@ -108,5 +124,5 @@ namespace _01_HelloWorld
         }
     }
 
-
+   
 }
